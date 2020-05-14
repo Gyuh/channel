@@ -61,4 +61,14 @@ public class PolicyHandler{
             System.out.println("======================");
         }
     }
+    @StreamListener(KafkaProcessor.INPUT)
+    public void added_comment(@Payload CreatedComment createdComment){
+        if(createdComment.isMe()){
+            System.out.println("##### listener createdComment : " + createdComment.toJson());
+            System.out.println("clientid님이 comment를 남겼습니다." + createdComment.getComment());
+            System.out.println("======================");
+        }
+    }
+
+
 }

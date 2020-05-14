@@ -1,6 +1,7 @@
 youtube\config\kafka\KafkaProcessor.class
 youtube\CreatedChannel.class
 youtube\EditedChannel.class
+youtube\CreatedComment.class
 youtube\Application.class
 youtube\ChannelSystemRepository.class
 youtube\ChannelSystemController.class
